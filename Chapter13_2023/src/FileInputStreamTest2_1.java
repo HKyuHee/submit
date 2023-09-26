@@ -1,6 +1,6 @@
 /*
- * ÀÛ¼ºÀÏ : 2023³â 9¿ù 22ÀÏ
- * ÀÛ¼ºÀÚ : 201995103	È²±ÔÈñ
+ * ì‘ì„±ì¼ : 2023ë…„ 9ì›” 22ì¼
+ * ì‘ì„±ì : 201995103	í™©ê·œí¬
  */
 
 import java.io.File;
@@ -12,23 +12,23 @@ public class FileInputStreamTest2_1 {
 
 	public static void main(String[] args) {
 		try {
-			// FileInputStream °´Ã¼ »ı¼º.
+			// FileInputStream ê°ì²´ ìƒì„±.
 			File file = new File("c.txt");
 			
 			FileInputStream fr = new FileInputStream(file);
 			
-			// ÇÑ ¹®ÀÚ¾¿ ÀĞ±â.
+			// í•œ ë¬¸ìì”© ì½ê¸°.
 			int i;
-			while((i=fr.read()) != -1) {	// µ¥ÀÌÅÍ¸¦ ¸ğµÎ ÀĞÀ¸¸é -1 ¹İÈ¯.
-				System.out.print((char)i);
+			while((i=fr.read()) != -1) {	// ë°ì´í„°ë¥¼ ëª¨ë‘ ì½ìœ¼ë©´ -1 ë°˜í™˜.
+				System.out.println(i);
 			}
-			fr.close();		// ½ºÆ®¸² ´İ±â.
+			fr.close();		// ìŠ¤íŠ¸ë¦¼ ë‹«ê¸°.
 		}
 		catch (FileNotFoundException e) {
-			System.out.println("ÆÄÀÏÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("íŒŒì¼ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		catch (IOException e) {
-			System.out.println("ÀĞ¾îµéÀÏ ÆÄÀÏÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ì½ì–´ë“¤ì¼ íŒŒì¼ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 
