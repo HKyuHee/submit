@@ -1,6 +1,6 @@
 /*
- * ÀÛ¼ºÀÏ : 2023³â 9¿ù 22ÀÏ
- * ÀÛ¼ºÀÚ : 201995103	È²±ÔÈñ
+ * ì‘ì„±ì¼ : 2023ë…„ 9ì›” 22ì¼
+ * ì‘ì„±ì : 201995103	í™©ê·œí¬
  */
 
 import java.io.File;
@@ -9,17 +9,17 @@ import java.io.IOException;
 
 public class FileInputStreamTest2 {
 	public static void main(String[] args) throws IOException {
-		// ÆÄÀÏ °´Ã¼ »ı¼º.
+		// íŒŒì¼ ê°ì²´ ìƒì„±.
 		File file = new File("c.txt");
 		
-		// FileReader °´Ã¼ »ı¼º.
+		// FileReader ê°ì²´ ìƒì„±.
 		FileReader fr = new FileReader(file);
 		
-		// ÇÑ ¹®ÀÚ¾¿ ÀĞ±â.
+		// í•œ ë¬¸ìì”© ì½ê¸°.
 		int i;
-		while((i=fr.read()) != -1) {	// µ¥ÀÌÅÍ¸¦ ¸ğµÎ ÀĞÀ¸¸é -1 ¹İÈ¯.
-			System.out.print((char)i);
+		while((i=fr.read()) != -1) {	// ë°ì´í„°ë¥¼ ëª¨ë‘ ì½ìœ¼ë©´ -1 ë°˜í™˜.
+			System.out.println(i);
 		}
-		fr.close();		// ½ºÆ®¸² ´İ±â.
+		fr.close();		// ìŠ¤íŠ¸ë¦¼ ë‹«ê¸°.
 	}
 }
