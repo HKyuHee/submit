@@ -1,6 +1,6 @@
 /*
- * ÀÛ¼ºÀÏ : 2023³â 9¿ù 22ÀÏ
- * ÀÛ¼ºÀÚ : 201995103	È²±ÔÈñ
+ * ì‘ì„±ì¼ : 2023ë…„ 9ì›” 22ì¼
+ * ì‘ì„±ì : 201995103	í™©ê·œí¬
  */
 
 import java.io.FileInputStream;
@@ -11,20 +11,20 @@ public class FileInputStreamTest1 {
 	public static void main(String[] args) throws IOException {
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.print("ÀĞÀ» ÆÄÀÏ¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
-		String sfile = stdIn.next();	// ¹®ÀÚ¿­·Î ÀÔ·ÂµÈ ÆÄÀÏ¸í ÀúÀå.
+		System.out.print("ì½ì„ íŒŒì¼ëª…ì„ ì…ë ¥í•˜ì„¸ìš” : ");
+		String sfile = stdIn.next();	// ë¬¸ìì—´ë¡œ ì…ë ¥ëœ íŒŒì¼ëª… ì €ì¥.
 		
-		// ÀĞ¾îµéÀÏ ÆÄÀÏ¸íÀ¸·Î °´Ã¼ »ı¼º.
+		// ì½ì–´ë“¤ì¼ íŒŒì¼ëª…ìœ¼ë¡œ ê°ì²´ ìƒì„±.
 		FileInputStream fis = new FileInputStream(sfile);
 		
-		// ÇÑ ¹ÙÀÌÆ®¾¿ ÀĞ±â.
+		// í•œ ë°”ì´íŠ¸ì”© ì½ê¸°.
 		int i;
-		while((i=fis.read()) != -1) {	// µ¥ÀÌÅÍ¸¦ ¸ğµÎ ÀĞÀ¸¸é -1 ¹İÈ¯.
-			System.out.print((char)i);
+		while((i=fis.read()) != -1) {	// ë°ì´í„°ë¥¼ ëª¨ë‘ ì½ìœ¼ë©´ -1 ë°˜í™˜.
+			System.out.println(i);
 		}
-		fis.close();	// ÀÔ·Â ½ºÆ®¸² ´İ±â.
+		fis.close();	// ì…ë ¥ ìŠ¤íŠ¸ë¦¼ ë‹«ê¸°.
 		
-		System.out.println(sfile + "ÆÄÀÏ·ÎºÎÅÍ ¹ÙÀÌÆ®¸¦ ÀĞ¾î È­¸é¿¡ Ãâ·ÂÇÏ¿´½À´Ï´Ù.");
+		System.out.println(sfile + "íŒŒì¼ë¡œë¶€í„° ë°”ì´íŠ¸ë¥¼ ì½ì–´ í™”ë©´ì— ì¶œë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
 					
 	}
 }
